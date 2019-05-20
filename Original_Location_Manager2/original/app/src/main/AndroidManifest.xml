@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bagicode.www.bagilogindesign"
+    android:installLocation="auto">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity_Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student_Register_Activity"></activity>
+        <activity android:name=".Faculty_Register_Activity"></activity>
+        <activity android:name=".Landing_Page_Activity" />
+        <activity android:name=".FacultyLandingPageActivity"></activity>
+        <activity android:name=".Student_Retrieve"></activity>
+        <activity android:name=".Faculty_Retrieve"></activity>
+        <activity android:name=".Student_Attend_Retrieve"></activity>
+        <activity android:name=".Student_Result_Retrieve"></activity>
+        <activity android:name=".Student_Details"></activity>
+        <activity android:name=".Facultyactivity"></activity>
+        <activity android:name=".LoginHome"></activity>
+        <activity android:name=".Student_Report"></activity>
+
+    </application>
+
+</manifest>

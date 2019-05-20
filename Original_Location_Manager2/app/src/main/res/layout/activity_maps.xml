@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp">
+
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                android:id="@+id/verticalSeekBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:max="15"
+                android:progress="12"
+                android:splitTrack="false"
+                app:seekBarRotation="CW270" />
+
+        </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+        <TextView
+            android:id="@+id/txt0"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginBottom="5dp"
+            android:text="nkxnsnsxn"
+            android:visibility="invisible"
+            android:textAllCaps="true"
+            android:textColor="#202021"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:text=""
+            android:textSize="20sp" />
+    </RelativeLayout>
+</fragment>

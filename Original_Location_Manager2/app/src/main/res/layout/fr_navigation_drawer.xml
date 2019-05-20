@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nav_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imgc"
+            android:background="@drawable/imgd"
+            android:layout_marginStart="2dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_marginStart="15dp"
+            android:textColor="#FFF"
+            android:id="@+id/tv_name"
+            android:text="Student Information"
+            android:fontFamily="sans-serif"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/main_navigation"
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="fill"
+            android:fitsSystemWindows="true"
+            android:listSelector="#8ff196b3" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

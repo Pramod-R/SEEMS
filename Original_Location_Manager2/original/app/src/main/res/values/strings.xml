@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">SIS</string>
+    <string name="text_not_member">No account yet?<u>Create one</u></string>
+    <string name="text_member">Already a member?<u>Login</u></string>
+    <string name="drawer_open">50</string>
+    <string name="drawer_close">50</string>
+    <string name="text">Course Code\t\t\t\tClass Conduct\t\t\t\tClass Attend\t\t\t\tPercentage</string>
+    <string name="text1">Sub Code\t\t\t\tSubject\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tIM\t\t\t\t\t\tEM\t\t\t\tTotal\t\tGrade</string>
+
+<string name="make_an_order">Make an order</string>
+<string name="dialog_title"> SELECT ABSENTEES</string>
+<string name="ok_label">OK</string>
+<string name="dismiss_label">Dissmiss</string>
+<string name="clear_all_label">Clear all</string>
+<string name="log">Logout</string>
+<string name="strAll">CheckAll</string>
+
+<string-array name="semId">
+    <item>Semester</item>
+    <item>I</item>
+    <item>II</item>
+    <item>III</item>
+    <item>IV</item>
+    <item>V</item>
+    <item>VI</item>
+
+</string-array>
+<string-array name="subid">
+    <item>Subcode</item>
+    <item>MCA01</item>
+    <item>MCA02</item>
+    <item>MCA03</item>
+    <item>MCA04</item>
+    <item>MCA05</item>
+    <item>MCA06</item>
+
+</string-array>
+<string-array name="Timeid">
+    <item>Time</item>
+    <item>8-9</item>
+    <item>9-10</item>
+    <item>10-11</item>
+    <item>10-12</item>
+    <item>12-1</item>
+</string-array>
+</resources>
+
+

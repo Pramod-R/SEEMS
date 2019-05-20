@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:background="@drawable/background_white">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="#000000"
+                android:textColor="#000000">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:drawableRight="@drawable/ic_person"
+
+                    android:inputType="textPersonName"
+                    android:textColor="#000000"
+                    android:textColorLink="#000000" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Usnno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000">
+
+                <EditText
+                    android:id="@+id/usnno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Usn"
+                    android:drawableRight="@drawable/ic_person"
+                    android:textColor="#000000"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000">
+
+                <EditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="DOB"
+                    android:drawableRight="@drawable/ic_person"
+                    android:textColor="#000000"
+                    android:inputType="date"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_person"
+                    android:inputType="textEmailAddress"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/Gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000">
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Gender"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_person"
+                    android:inputType="text"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/pnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000">
+
+                <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Phone number"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_person"
+
+                    android:inputType="textEmailAddress"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000"
+                android:textColorHint="#000000"
+                android:textColor="#000000">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000000"
+                android:textColorHint="#000000"
+                android:textColor="#000000">
+
+                <EditText
+                    android:id="@+id/confirmpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:textColor="#000000"
+                    android:drawableRight="@drawable/ic_person"
+                    android:inputType="textEmailAddress"
+                    android:textColorLink="#000000"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="SignUp"
+                android:background="@drawable/rec_gradient"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/loginLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="@string/text_member"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

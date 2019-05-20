@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/tool_bar" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!-- The main content view -->
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="com.sapthagiri.www.sap.FacultyFragmentDrawer"
+
+        android:layout_width="260dp"
+        android:layout_gravity="start"
+        app:layout="@layout/faculty_fr_navigation_drawer"
+        tools:layout="@layout/faculty_fr_navigation_drawer"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/llnewBook"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!--   <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/faculty1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:entries="@array/faculty"
+                        android:ems="20"
+                        android:textColor="#000000" />
+
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Faculty:"
+                        android:textAllCaps="false"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text0"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="140dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Branch"
+                        android:textAllCaps="false"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/branch1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Select Semester:"
+                        android:textAllCaps="false"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/semester1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:autofillHints="semester"
+                        android:ems="20"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Section:"
+                        android:textAllCaps="false"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/section1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginTop="20dp"
+                        android:autofillHints="Section"
+                        android:ems="20"
+
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorAccent"
+                        android:padding="10dp"
+                        android:text="Select a date"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/eventdate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#050505"
+                        android:textSize="20sp"
+                        android:textStyle="italic|bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Announcements:"
+                        android:textAllCaps="false"
+                        android:textColor="#202021"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:id="@+id/eventdesc1"
+                        android:layout_width="190dp"
+                        android:layout_height="75dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_textview"
+                        android:ems="10"
+
+                        android:inputType="textPersonName"
+                        android:paddingLeft="15dp" />
+
+
+
+
+                </LinearLayout>
+
+                <!--  <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/usnspn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:ems="20"
+                        android:autofillHints="Usn"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+
+                <!--   <Button
+                       android:id="@+id/newbtn3"
+                       android:layout_width="240dp"
+                       android:layout_height="60dp"
+                       android:layout_marginLeft="80dp"
+                       android:layout_marginTop="30dp"
+                       android:textSize="30dp"
+                       android:textColor="#ffffff"
+                       android:background="@drawable/arrow" />-->
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="190dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/rec_gradient"
+                    android:gravity="center"
+                    android:paddingLeft="0dp"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="25dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>
+

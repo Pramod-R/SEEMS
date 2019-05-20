@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#282727</color>
+    <color name="colorText">#120c0c</color>
+    <color name="clr">#8ff196b3</color>
+    <color name="color_icon">#ffffff</color>
+    <color name="table_data_row_even">#11C5CAE9</color>
+    <color name="table_data_row_odd">#33C5CAE9</color>
+    <color name="colorPrimary1">#91f2e9</color>
+</resources>
